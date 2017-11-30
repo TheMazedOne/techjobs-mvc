@@ -3,8 +3,9 @@ package org.launchcode.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.HashMap;
+import java.util.ArrayList;
 
 /**
  * Created by LaunchCode
@@ -13,6 +14,7 @@ import java.util.HashMap;
 public class HomeController {
 
     @RequestMapping(value = "")
+
     public String index(Model model) {
 
         HashMap<String, String> actionChoices = new HashMap<>();
@@ -25,3 +27,5 @@ public class HomeController {
     }
 
 }
+
+
